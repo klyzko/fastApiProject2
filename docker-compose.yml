@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    build: fastApiProject2
     container_name: dav-motors
     ports:
       - "8000:8000"
