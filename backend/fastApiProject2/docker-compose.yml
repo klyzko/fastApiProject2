@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: dav-motors
+    ports:
+      - "8000:8000"
+    environment:
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_TO=${MAIL_TO}
+    env_file:
+      - .env
+    restart: unless-stopped
