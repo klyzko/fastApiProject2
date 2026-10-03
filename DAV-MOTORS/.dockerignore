@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!nginx.conf
+!index.html
+!data.html
+!styles.css
+!script.js
+!assets/
+!assets/**
